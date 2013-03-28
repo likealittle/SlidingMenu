@@ -1,14 +1,14 @@
 package com.slidingmenu.lib.app;
 
+import roboguice.activity.RoboFragmentActivity;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 
 import com.slidingmenu.lib.SlidingMenu;
 
-public class SlidingFragmentActivity extends FragmentActivity implements SlidingActivityBase {
+public class SlidingFragmentActivity extends RoboFragmentActivity implements SlidingActivityBase {
 
 	private SlidingActivityHelper mHelper;
 

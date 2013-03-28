@@ -1,6 +1,6 @@
 package com.slidingmenu.lib.app;
 
-import android.app.ListActivity;
+import roboguice.activity.RoboListActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import com.slidingmenu.lib.SlidingMenu;
 
-public class SlidingListActivity extends ListActivity implements SlidingActivityBase {
+public class SlidingListActivity extends RoboListActivity implements SlidingActivityBase {
 
 	private SlidingActivityHelper mHelper;
 
