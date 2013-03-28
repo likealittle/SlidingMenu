@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.actionbarsherlock.view.MenuItem;
 import com.slidingmenu.example.R;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
@@ -40,7 +39,6 @@ public class ResponsiveUIActivity extends SlidingFragmentActivity {
 			getSlidingMenu().setSlidingEnabled(true);
 			getSlidingMenu().setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 			// show home as up so we can toggle
-			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		} else {
 			// add a dummy view
 			View v = new View(this);
@@ -79,15 +77,6 @@ public class ResponsiveUIActivity extends SlidingFragmentActivity {
 			.setTitle(R.string.what_is_this)
 			.setMessage(R.string.responsive_explanation)
 			.show();
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
-			toggle();
-		}
-		return super.onOptionsItemSelected(item);
 	}
 
 	@Override
