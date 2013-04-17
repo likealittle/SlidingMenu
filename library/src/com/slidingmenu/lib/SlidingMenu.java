@@ -95,7 +95,7 @@ public class SlidingMenu extends RelativeLayout {
 		/**
 		 * On opened.
 		 */
-		public void onOpened();
+		public void onOpened(int position);
 	}
 
 	/**
@@ -133,7 +133,7 @@ public class SlidingMenu extends RelativeLayout {
 		/**
 		 * On closed.
 		 */
-		public void onClosed();
+		public void onClosed(int position);
 	}
 
 	/**
@@ -747,7 +747,7 @@ public class SlidingMenu extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the OnOpenedListener. {@link OnOpenedListener#onOpened() OnOpenedListener.onOpened()} will be called after the SlidingMenu is opened
+	 * Sets the OnOpenedListener. {@link OnOpenedListener#onOpened(int) OnOpenedListener.onOpened()} will be called after the SlidingMenu is opened
 	 *
 	 * @param listener the new OnOpenedListener
 	 */
@@ -756,7 +756,7 @@ public class SlidingMenu extends RelativeLayout {
 	}
 
 	/**
-	 * Sets the OnClosedListener. {@link OnClosedListener#onClosed() OnClosedListener.onClosed()} will be called after the SlidingMenu is closed
+	 * Sets the OnClosedListener. {@link OnClosedListener#onClosed(int) OnClosedListener.onClosed()} will be called after the SlidingMenu is closed
 	 *
 	 * @param listener the new OnClosedListener
 	 */
