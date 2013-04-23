@@ -5,6 +5,7 @@
 *.war
 *.ear
 *.apk
+*.iml
 bin/
 bin
 gen/
