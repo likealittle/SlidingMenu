@@ -1,0 +1,27 @@
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "17.0"
+
+    sourceSets {
+       main {
+         manifest.srcFile 'library/AndroidManifest.xml'
+         java.srcDirs = ['library/src']
+         res {
+             srcDirs = ['library/res']
+         }
+         assets {
+             srcDirs = ['library/assets']
+         }
+         resources {
+             srcDirs = ['library/src']
+         }
+       }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v13:13.0.0'
+    compile 'org.roboguice:roboguice:2.0'
+}
