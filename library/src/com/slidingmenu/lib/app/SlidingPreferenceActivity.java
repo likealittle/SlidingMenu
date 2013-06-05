@@ -1,6 +1,6 @@
 package com.slidingmenu.lib.app;
 
-import roboguice.activity.RoboPreferenceActivity;
+
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.view.ViewGroup.LayoutParams;
 
 import com.slidingmenu.lib.SlidingMenu;
 
-public class SlidingPreferenceActivity extends RoboPreferenceActivity implements SlidingActivityBase {
+public class SlidingPreferenceActivity extends PreferenceActivity implements SlidingActivityBase {
 
 	private SlidingActivityHelper mHelper;
 
